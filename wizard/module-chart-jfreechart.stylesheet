@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<stylesheet xmlns="http://www.nextapp.com/products/echo2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.romaframework.org/schema/echo2-stylesheet.xsd">
+	
+	<style name="ChartViewer" base-name="Object"
+		type="nextapp.echo2.app.WindowPane">
+		<properties>
+			<property name="width" value="700px" />
+			<property name="height" value="600px" />
+		</properties>
+	</style>
+</stylesheet>
