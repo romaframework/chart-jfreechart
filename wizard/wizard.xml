@@ -2,20 +2,10 @@
 <project basedir="." default="add-module" name="roma-chart-jfreechart-wizard">
 	<property environment="env" />
 
-	<import file="../../roma-core-wizard/wizard/base-wizard.xml" />
+	<import file="${wizard.path}/base-wizard.xml" />
 
 	<target name="add-module">
 		<property name="module.ioc-file" value="applicationContext-chart-jfreechart.xml" />
 		<antcall target="copy-module-ioc-file" />
-
-		<!-- COPY STYLESHEETS -->
-		<copy todir="${project.path}/${project.src}/${project.package-path}/view/style">
-			<fileset dir=".">
-				<include name="*.stylesheet" />
-			</fileset>
-			<filterset>
-				<filter token="project.package-path" value="${project.package-path}" />
-			</filterset>
-		</copy>
 	</target>
 </project>
