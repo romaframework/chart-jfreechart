@@ -79,7 +79,7 @@ public class RenderOptionsMain extends ComposedEntityInstance<EditableRenderOpti
 
 	@Override
 	@CoreField(embedded = AnnotationConstants.TRUE)
-	@ViewField(layout = ViewConstants.LAYOUT_EXPAND)
+	@ViewField(position = ViewConstants.LAYOUT_EXPAND)
 	public EditableRenderOptions getEntity() {
 		return super.getEntity();
 	}
