@@ -11,7 +11,6 @@
 		<artifact name="roma-chart-jfreechart" ext="jar" type="jar" conf="default"></artifact>
 		<artifact name="roma-chart-jfreechart-test" ext="jar" type="jar" conf="test"></artifact>
 		<artifact name="roma-chart-jfreechart-wizard" ext="zip" type="zip" conf="wizard"></artifact>
-		<artifact name="roma-chart-jfreechart" ext="pom" type="pom" conf="publish"></artifact>
 	</publications>
 	<dependencies>
 		<dependency org="org.romaframework" name="roma-core" rev="latest.integration" conf="*->default;wizard->wizard" />
