@@ -27,11 +27,7 @@ import org.romaframework.aspect.view.ViewAspect;
 import org.romaframework.core.Roma;
 import org.romaframework.core.Utility;
 import org.romaframework.core.module.SelfRegistrantModule;
-import org.romaframework.core.schema.SchemaAction;
-import org.romaframework.core.schema.SchemaClassDefinition;
 import org.romaframework.core.schema.SchemaClassResolver;
-import org.romaframework.core.schema.SchemaEvent;
-import org.romaframework.core.schema.SchemaField;
 import org.romaframework.module.chart.jfreechart.domain.ChartRenderer;
 import org.romaframework.module.chart.jfreechart.domain.ChartRepresentable;
 import org.romaframework.module.chart.jfreechart.helper.ChartHelper;
@@ -90,27 +86,6 @@ public class ChartModule extends SelfRegistrantModule implements ChartAspect {
 		return moduleName();
 	}
 
-	public void beginConfigClass(SchemaClassDefinition iClass) {
-	}
-
-	public void endConfigClass(SchemaClassDefinition iClass) {
-	}
-
-	public void configAction(SchemaAction iAction) {
-
-	}
-
-	public void configClass(SchemaClassDefinition iClass) {
-
-	}
-
-	public void configEvent(SchemaEvent iEvent) {
-
-	}
-
-	public void configField(SchemaField iField) {
-
-	}
 
 	public Object getUnderlyingComponent() {
 		return null;

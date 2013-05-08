@@ -37,7 +37,7 @@ public class TestImageGeneration extends TestCase {
 		EditableRenderOptions options = getOptions();
 		for (String type : renderer.getSupportedChartTypes()) {
 			options.setChartType(type);
-			File file = new File(baseDir + "/temp/prova" + type + ".png");
+			File file = File.createTempFile("test" + type, ".png");
 			FileOutputStream stream = new FileOutputStream(file);
 			renderer.render(options, stream);
 			stream.flush();
@@ -56,7 +56,7 @@ public class TestImageGeneration extends TestCase {
 		EditableRenderOptions options = getOptions();
 		for (String type : renderer.getSupportedChartTypes()) {
 			options.setChartType(type);
-			File file = new File(baseDir + "/temp/list-" + type + ".png");
+			File file = File.createTempFile("test-list" + type, ".png");
 			FileOutputStream stream = new FileOutputStream(file);
 			renderer.render(options, stream);
 			stream.flush();
@@ -87,7 +87,7 @@ public class TestImageGeneration extends TestCase {
 		EditableRenderOptions options = getOptions();
 		for (String type : renderer.getSupportedChartTypes()) {
 			options.setChartType(type);
-			File file = new File(baseDir + "/temp/list3d-" + type + ".png");
+			File file = File.createTempFile("test-list3d" + type, ".png");
 			FileOutputStream stream = new FileOutputStream(file);
 			renderer.render(options, stream);
 			stream.flush();
@@ -105,7 +105,7 @@ public class TestImageGeneration extends TestCase {
 		EditableRenderOptions options = getOptions();
 		for (String type : renderer.getSupportedChartTypes()) {
 			options.setChartType(type);
-			File file = new File(baseDir + "/temp/map-" + type + ".png");
+			File file = File.createTempFile("test-map" + type, ".png");
 			FileOutputStream stream = new FileOutputStream(file);
 			renderer.render(options, stream);
 			stream.flush();
@@ -132,7 +132,7 @@ public class TestImageGeneration extends TestCase {
 		EditableRenderOptions options = getOptions();
 		for (String type : renderer.getSupportedChartTypes()) {
 			options.setChartType(type);
-			File file = new File(baseDir + "/temp/map3d-" + type + ".png");
+			File file = File.createTempFile("test-map3d" + type, ".png");
 			FileOutputStream stream = new FileOutputStream(file);
 			renderer.render(options, stream);
 			stream.flush();
